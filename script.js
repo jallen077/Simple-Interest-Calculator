@@ -1,6 +1,14 @@
 function compute()
 {
     principal = document.getElementById("principal").value;
+    
+    if (principal <= 0)
+    {
+        alert("Please input a valid amount for the principal.");
+        document.getElementById("principal").focus;
+        return false;
+    }
+    
     rate = document.getElementById("rate").value;
     years = document.getElementById("years").value;
     result = principal * rate * years / 100;
@@ -9,6 +17,8 @@ function compute()
 
     document.getElementById("result").innerHTML = "If you deposit: <mark>" + principal + "</mark><br>At an interest rate of: <mark>" + rate + "%</mark><br>You will receive an amount of: <mark>" + result + "</mark><br>In the year: <mark>" + year + "</mark>";
     
+
+
  }
 
 function showVal(newVal){
