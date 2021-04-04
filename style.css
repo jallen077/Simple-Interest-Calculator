@@ -2,10 +2,15 @@ body {background-color:black; font:arial; color:white; }
 h1{color:grey; font:verdana;}
 .maindiv{ background-color:white; 
           color:black; 
-          width:300px; 
-          padding:20px; 
+          width:400px; 
+          padding:20px;
           border-radius:25px;
           text-align: center;
+}
+
+.secdiv{
+    display: inline-block;
+    text-align:left;
 }
 
 .copyright {

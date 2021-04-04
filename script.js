@@ -5,7 +5,9 @@ function compute()
     years = document.getElementById("years").value;
     result = principal * rate * years / 100;
     // convert number of years into actual year in the future
-    document.getElementById("result").innerHTML = "If you deposit:" + principal + "<br>At an interest rate of:" + rate + "<br>You will receive an amount of:" + result + "<br>In the year:" + years ;
+    year = parseInt(new Date().getFullYear()) + parseInt(years);
+
+    document.getElementById("result").innerHTML = "If you deposit: <mark>" + principal + "</mark><br>At an interest rate of: <mark>" + rate + "%</mark><br>You will receive an amount of: <mark>" + result + "</mark><br>In the year: <mark>" + year + "</mark>";
     
  }
 
